@@ -16,6 +16,8 @@
 		BE5B495D2B0BCA3800093ACB /* Dogs_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B495C2B0BCA3800093ACB /* Dogs_IOSTests.swift */; };
 		BE5B49672B0BCA3800093ACB /* Dogs_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49662B0BCA3800093ACB /* Dogs_IOSUITests.swift */; };
 		BE5B49692B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */; };
+		BE5B49852B0BF60D00093ACB /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49842B0BF60D00093ACB /* DogModel.swift */; };
+		BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49882B0BF90E00093ACB /* DogModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BE5B49622B0BCA3800093ACB /* Dogs-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B49662B0BCA3800093ACB /* Dogs_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITests.swift; sourceTree = "<group>"; };
 		BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BE5B49842B0BF60D00093ACB /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
+		BE5B49882B0BF90E00093ACB /* DogModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		BE5B495B2B0BCA3800093ACB /* Dogs-IOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE5B49862B0BF89D00093ACB /* Business Logic */,
 				BE5B495C2B0BCA3800093ACB /* Dogs_IOSTests.swift */,
 			);
 			path = "Dogs-IOSTests";
@@ -149,6 +154,7 @@
 		BE5B49762B0BD7A900093ACB /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
+				BE5B49822B0BF58000093ACB /* Models */,
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
@@ -165,6 +171,30 @@
 			children = (
 			);
 			path = "Data Access";
+			sourceTree = "<group>";
+		};
+		BE5B49822B0BF58000093ACB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B49842B0BF60D00093ACB /* DogModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE5B49862B0BF89D00093ACB /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B49872B0BF8AB00093ACB /* Models */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		BE5B49872B0BF8AB00093ACB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B49882B0BF90E00093ACB /* DogModelTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */,
+				BE5B49852B0BF60D00093ACB /* DogModel.swift in Sources */,
 				BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */,
 				BE5B494D2B0BCA3700093ACB /* ContentView.swift in Sources */,
 				BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */,
@@ -308,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */,
 				BE5B495D2B0BCA3800093ACB /* Dogs_IOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
