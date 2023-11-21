@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E19EA5B59722292BCA5FEA0 /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F683C2AF7C23734131C3B57 /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift */; };
 		BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */; };
 		BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49472B0BCA3700093ACB /* Persistence.swift */; };
 		BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */; };
 		BE5B494D2B0BCA3700093ACB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B494C2B0BCA3700093ACB /* ContentView.swift */; };
 		BE5B494F2B0BCA3800093ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5B494E2B0BCA3800093ACB /* Assets.xcassets */; };
 		BE5B49532B0BCA3800093ACB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5B49522B0BCA3800093ACB /* Preview Assets.xcassets */; };
-		BE5B495D2B0BCA3800093ACB /* Dogs_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B495C2B0BCA3800093ACB /* Dogs_IOSTests.swift */; };
 		BE5B49672B0BCA3800093ACB /* Dogs_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49662B0BCA3800093ACB /* Dogs_IOSUITests.swift */; };
 		BE5B49692B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */; };
 		BE5B49852B0BF60D00093ACB /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49842B0BF60D00093ACB /* DogModel.swift */; };
 		BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49882B0BF90E00093ACB /* DogModelTests.swift */; };
+		BE5B498C2B0C139D00093ACB /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B498B2B0C139D00093ACB /* NetworkingProvider.swift */; };
+		BE5B498F2B0C174200093ACB /* NetworkFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B498E2B0C174200093ACB /* NetworkFetchable.swift */; };
+		BE5B49932B0C228E00093ACB /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = BE5B49922B0C228E00093ACB /* Mockingbird */; };
+		BE5B49952B0C2A4800093ACB /* NetworkingProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49942B0C2A4800093ACB /* NetworkingProviderTests.swift */; };
+		BE5B49A82B0C61CE00093ACB /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49A72B0C61CE00093ACB /* URLProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F683C2AF7C23734131C3B57 /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Dogs_IOSTests-Dogs_IOSMocks.generated.swift"; path = "MockingbirdMocks/Dogs_IOSTests-Dogs_IOSMocks.generated.swift"; sourceTree = "<group>"; };
 		BE5B49422B0BCA3700093ACB /* Dogs-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dogs-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSApp.swift; sourceTree = "<group>"; };
 		BE5B49472B0BCA3700093ACB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -47,12 +53,15 @@
 		BE5B49502B0BCA3800093ACB /* Dogs_IOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dogs_IOS.entitlements; sourceTree = "<group>"; };
 		BE5B49522B0BCA3800093ACB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE5B49582B0BCA3800093ACB /* Dogs-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE5B495C2B0BCA3800093ACB /* Dogs_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSTests.swift; sourceTree = "<group>"; };
 		BE5B49622B0BCA3800093ACB /* Dogs-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B49662B0BCA3800093ACB /* Dogs_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITests.swift; sourceTree = "<group>"; };
 		BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BE5B49842B0BF60D00093ACB /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		BE5B49882B0BF90E00093ACB /* DogModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModelTests.swift; sourceTree = "<group>"; };
+		BE5B498B2B0C139D00093ACB /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		BE5B498E2B0C174200093ACB /* NetworkFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchable.swift; sourceTree = "<group>"; };
+		BE5B49942B0C2A4800093ACB /* NetworkingProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProviderTests.swift; sourceTree = "<group>"; };
+		BE5B49A72B0C61CE00093ACB /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5B49932B0C228E00093ACB /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76265997B7518A13B7547FD5 /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5F683C2AF7C23734131C3B57 /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift */,
+			);
+			name = "Generated Mocks";
+			sourceTree = "<group>";
+		};
 		BE5B49392B0BCA3700093ACB = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +105,7 @@
 				BE5B495B2B0BCA3800093ACB /* Dogs-IOSTests */,
 				BE5B49652B0BCA3800093ACB /* Dogs-IOSUITests */,
 				BE5B49432B0BCA3700093ACB /* Products */,
+				76265997B7518A13B7547FD5 /* Generated Mocks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,17 +122,18 @@
 		BE5B49442B0BCA3700093ACB /* Dogs-IOS */ = {
 			isa = PBXGroup;
 			children = (
-				BE5B49792B0BD80000093ACB /* Data Access */,
-				BE5B49772B0BD7C400093ACB /* Data Persistence  */,
-				BE5B49762B0BD7A900093ACB /* Business Logic */,
-				BE5B49752B0BD79500093ACB /* Presentation */,
-				BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */,
-				BE5B49472B0BCA3700093ACB /* Persistence.swift */,
-				BE5B494C2B0BCA3700093ACB /* ContentView.swift */,
 				BE5B494E2B0BCA3800093ACB /* Assets.xcassets */,
+				BE5B494C2B0BCA3700093ACB /* ContentView.swift */,
+				BE5B49772B0BD7C400093ACB /* Data Persistence  */,
 				BE5B49502B0BCA3800093ACB /* Dogs_IOS.entitlements */,
 				BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */,
+				BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */,
+				BE5B49762B0BD7A900093ACB /* Model */,
+				BE5B49792B0BD80000093ACB /* Networking */,
+				BE5B49472B0BCA3700093ACB /* Persistence.swift */,
 				BE5B49512B0BCA3800093ACB /* Preview Content */,
+				BE5B49752B0BD79500093ACB /* View */,
+				BE5B498A2B0C0EF400093ACB /* ViewModel */,
 			);
 			path = "Dogs-IOS";
 			sourceTree = "<group>";
@@ -129,8 +149,9 @@
 		BE5B495B2B0BCA3800093ACB /* Dogs-IOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE5B49862B0BF89D00093ACB /* Business Logic */,
-				BE5B495C2B0BCA3800093ACB /* Dogs_IOSTests.swift */,
+				BE5B49962B0C2D2700093ACB /* Mocks */,
+				BE5B49902B0C189B00093ACB /* Networking */,
+				BE5B49862B0BF89D00093ACB /* Model */,
 			);
 			path = "Dogs-IOSTests";
 			sourceTree = "<group>";
@@ -144,19 +165,19 @@
 			path = "Dogs-IOSUITests";
 			sourceTree = "<group>";
 		};
-		BE5B49752B0BD79500093ACB /* Presentation */ = {
+		BE5B49752B0BD79500093ACB /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presentation;
+			path = View;
 			sourceTree = "<group>";
 		};
-		BE5B49762B0BD7A900093ACB /* Business Logic */ = {
+		BE5B49762B0BD7A900093ACB /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BE5B49822B0BF58000093ACB /* Models */,
 			);
-			path = "Business Logic";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BE5B49772B0BD7C400093ACB /* Data Persistence  */ = {
@@ -166,11 +187,13 @@
 			path = "Data Persistence ";
 			sourceTree = "<group>";
 		};
-		BE5B49792B0BD80000093ACB /* Data Access */ = {
+		BE5B49792B0BD80000093ACB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BE5B498D2B0C172800093ACB /* Protocol */,
+				BE5B498B2B0C139D00093ACB /* NetworkingProvider.swift */,
 			);
-			path = "Data Access";
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		BE5B49822B0BF58000093ACB /* Models */ = {
@@ -181,12 +204,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		BE5B49862B0BF89D00093ACB /* Business Logic */ = {
+		BE5B49862B0BF89D00093ACB /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BE5B49872B0BF8AB00093ACB /* Models */,
 			);
-			path = "Business Logic";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BE5B49872B0BF8AB00093ACB /* Models */ = {
@@ -195,6 +218,37 @@
 				BE5B49882B0BF90E00093ACB /* DogModelTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BE5B498A2B0C0EF400093ACB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE5B498D2B0C172800093ACB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B498E2B0C174200093ACB /* NetworkFetchable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BE5B49902B0C189B00093ACB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B49942B0C2A4800093ACB /* NetworkingProviderTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BE5B49962B0C2D2700093ACB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B49A72B0C61CE00093ACB /* URLProtocolMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE5B496F2B0BCA3800093ACB /* Build configuration list for PBXNativeTarget "Dogs-IOSTests" */;
 			buildPhases = (
+				83738C19B8248B9F396471DC /* Generate Mockingbird Mocks */,
 				BE5B49542B0BCA3800093ACB /* Sources */,
 				BE5B49552B0BCA3800093ACB /* Frameworks */,
 				BE5B49562B0BCA3800093ACB /* Resources */,
@@ -231,6 +286,9 @@
 				BE5B495A2B0BCA3800093ACB /* PBXTargetDependency */,
 			);
 			name = "Dogs-IOSTests";
+			packageProductDependencies = (
+				BE5B49922B0C228E00093ACB /* Mockingbird */,
+			);
 			productName = "Dogs-IOSTests";
 			productReference = BE5B49582B0BCA3800093ACB /* Dogs-IOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -285,6 +343,9 @@
 				Base,
 			);
 			mainGroup = BE5B49392B0BCA3700093ACB;
+			packageReferences = (
+				BE5B49912B0C228E00093ACB /* XCRemoteSwiftPackageReference "mockingbird" */,
+			);
 			productRefGroup = BE5B49432B0BCA3700093ACB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,6 +383,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83738C19B8248B9F396471DC /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/Dogs_IOSTests-Dogs_IOSMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n# Infer the derived data location from the build environment.\n[[ -z \"${DERIVED_DATA+x}\" ]] && DERIVED_DATA=\"$(echo \"${BUILD_ROOT}\" | sed -n 's|\\(.*\\)/Build/.*|\\1|p')\"\n\n\"${DERIVED_DATA}/SourcePackages/checkouts/mockingbird/mockingbird\" generate --targets \"Dogs-IOS\" --only-protocols --disable-swiftlint --outputs \"${SRCROOT}/MockingbirdMocks/Dogs_IOSTests-Dogs_IOSMocks.generated.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE5B493E2B0BCA3700093ACB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,6 +409,8 @@
 			files = (
 				BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */,
 				BE5B49852B0BF60D00093ACB /* DogModel.swift in Sources */,
+				BE5B498F2B0C174200093ACB /* NetworkFetchable.swift in Sources */,
+				BE5B498C2B0C139D00093ACB /* NetworkingProvider.swift in Sources */,
 				BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */,
 				BE5B494D2B0BCA3700093ACB /* ContentView.swift in Sources */,
 				BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */,
@@ -340,7 +422,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */,
-				BE5B495D2B0BCA3800093ACB /* Dogs_IOSTests.swift in Sources */,
+				BE5B49952B0C2A4800093ACB /* NetworkingProviderTests.swift in Sources */,
+				BE5B49A82B0C61CE00093ACB /* URLProtocolMock.swift in Sources */,
+				4E19EA5B59722292BCA5FEA0 /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +576,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dogs-IOS/Preview Content\"";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -529,7 +615,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dogs-IOS/Preview Content\"";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -564,6 +652,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -587,6 +676,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -687,6 +777,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE5B49912B0C228E00093ACB /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE5B49922B0C228E00093ACB /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE5B49912B0C228E00093ACB /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */ = {

@@ -1,3 +1,5 @@
 Dogs-IOS.xcodeproj/project.xcworkspace/xcuserdata/*
 Dogs-IOS.xcodeproj/xcuserdata/*
 .DS_Store
+*.generated.swift
+**/*.xcodeproj/MockingbirdCache/
