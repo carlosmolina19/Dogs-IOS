@@ -25,10 +25,10 @@
 		BE5B49692B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */; };
 		BE5B49852B0BF60D00093ACB /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49842B0BF60D00093ACB /* DogModel.swift */; };
 		BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49882B0BF90E00093ACB /* DogModelTests.swift */; };
-		BE5B498C2B0C139D00093ACB /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B498B2B0C139D00093ACB /* NetworkingProvider.swift */; };
-		BE5B498F2B0C174200093ACB /* NetworkFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B498E2B0C174200093ACB /* NetworkFetchable.swift */; };
+		BE5B498C2B0C139D00093ACB /* NetworkProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B498B2B0C139D00093ACB /* NetworkProviderImpl.swift */; };
+		BE5B498F2B0C174200093ACB /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B498E2B0C174200093ACB /* NetworkProvider.swift */; };
 		BE5B49932B0C228E00093ACB /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = BE5B49922B0C228E00093ACB /* Mockingbird */; };
-		BE5B49952B0C2A4800093ACB /* NetworkingProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49942B0C2A4800093ACB /* NetworkingProviderTests.swift */; };
+		BE5B49952B0C2A4800093ACB /* NetworkProviderImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49942B0C2A4800093ACB /* NetworkProviderImplTests.swift */; };
 		BE5B49A82B0C61CE00093ACB /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49A72B0C61CE00093ACB /* URLProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,9 +70,9 @@
 		BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BE5B49842B0BF60D00093ACB /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		BE5B49882B0BF90E00093ACB /* DogModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModelTests.swift; sourceTree = "<group>"; };
-		BE5B498B2B0C139D00093ACB /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
-		BE5B498E2B0C174200093ACB /* NetworkFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchable.swift; sourceTree = "<group>"; };
-		BE5B49942B0C2A4800093ACB /* NetworkingProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProviderTests.swift; sourceTree = "<group>"; };
+		BE5B498B2B0C139D00093ACB /* NetworkProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderImpl.swift; sourceTree = "<group>"; };
+		BE5B498E2B0C174200093ACB /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		BE5B49942B0C2A4800093ACB /* NetworkProviderImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderImplTests.swift; sourceTree = "<group>"; };
 		BE5B49A72B0C61CE00093ACB /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		F8B83748372D35B917A835CB /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Dogs_IOSTests-Dogs_IOSMocks.generated.swift"; path = "MockingbirdMocks/Dogs_IOSTests-Dogs_IOSMocks.generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				BE5B498D2B0C172800093ACB /* Protocol */,
-				BE5B498B2B0C139D00093ACB /* NetworkingProvider.swift */,
+				BE5B498B2B0C139D00093ACB /* NetworkProviderImpl.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 		BE5B498D2B0C172800093ACB /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				BE5B498E2B0C174200093ACB /* NetworkFetchable.swift */,
+				BE5B498E2B0C174200093ACB /* NetworkProvider.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 		BE5B49902B0C189B00093ACB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				BE5B49942B0C2A4800093ACB /* NetworkingProviderTests.swift */,
+				BE5B49942B0C2A4800093ACB /* NetworkProviderImplTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -473,8 +473,8 @@
 				BE1C06F32B0D2FEA005016B4 /* DogModel+Decodable.swift in Sources */,
 				BE1C06EF2B0D2AED005016B4 /* RemoteDogRepository.swift in Sources */,
 				BE1C06F12B0D2C0C005016B4 /* RemoteDogRepositoryImpl.swift in Sources */,
-				BE5B498F2B0C174200093ACB /* NetworkFetchable.swift in Sources */,
-				BE5B498C2B0C139D00093ACB /* NetworkingProvider.swift in Sources */,
+				BE5B498F2B0C174200093ACB /* NetworkProvider.swift in Sources */,
+				BE5B498C2B0C139D00093ACB /* NetworkProviderImpl.swift in Sources */,
 				BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */,
 				BE5B494D2B0BCA3700093ACB /* ContentView.swift in Sources */,
 				BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */,
@@ -487,7 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */,
-				BE5B49952B0C2A4800093ACB /* NetworkingProviderTests.swift in Sources */,
+				BE5B49952B0C2A4800093ACB /* NetworkProviderImplTests.swift in Sources */,
 				BE5B49A82B0C61CE00093ACB /* URLProtocolMock.swift in Sources */,
 				BE1C06FC2B0D43FD005016B4 /* RemoteDogRepositoryImplTests.swift in Sources */,
 				AE545436257B7047D7180D7A /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift in Sources */,

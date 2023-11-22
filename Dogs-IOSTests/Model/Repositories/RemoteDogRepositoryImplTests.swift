@@ -14,7 +14,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
     // MARK: - Private Properties
     
     private var sut: SUT!
-    private var mockNetworkingProvider: NetworkFetchableMock!
+    private var mockNetworkProvider: NetworkProviderMock!
     private var tasks: Set<AnyCancellable>!
     
     // MARK: - Lifecycle
@@ -23,15 +23,15 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
         super.setUp()
         
         tasks = .init()
-        mockNetworkingProvider = mock(NetworkFetchable.self)
-        sut = SUT(networkingProvider: mockNetworkingProvider)
+        mockNetworkProvider = mock(NetworkProvider.self)
+        sut = SUT(networkProvider: mockNetworkProvider)
     }
     
     override func tearDown() {
         super.tearDown()
         
         sut = nil
-        mockNetworkingProvider = nil
+        mockNetworkProvider = nil
         tasks = nil
         
     }
@@ -52,7 +52,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
         
-        given(mockNetworkingProvider.fetch(from: url)).willReturn(publisher)
+        given(mockNetworkProvider.fetch(from: url)).willReturn(publisher)
         
         sut.fetch().sink {
             switch $0 {
@@ -67,7 +67,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
         }.store(in: &tasks)
         
         wait(for: [expectation], timeout: 1.0)
-        verify(mockNetworkingProvider.fetch(from: url)).wasCalled()
+        verify(mockNetworkProvider.fetch(from: url)).wasCalled()
         tasks.removeAll()
     }
     
@@ -84,7 +84,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
                                                          code: -1))
             .eraseToAnyPublisher()
         
-        given(mockNetworkingProvider.fetch(from: url)).willReturn(publisher)
+        given(mockNetworkProvider.fetch(from: url)).willReturn(publisher)
         
         sut.fetch().sink {
             switch $0 {
@@ -100,7 +100,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
         
         wait(for: [expectation], timeout: 1.0)
         
-        verify(mockNetworkingProvider.fetch(from: url)).wasCalled()
+        verify(mockNetworkProvider.fetch(from: url)).wasCalled()
         tasks.removeAll()
     }
     
@@ -118,7 +118,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
         
-        given(mockNetworkingProvider.fetch(from: url)).willReturn(publisher)
+        given(mockNetworkProvider.fetch(from: url)).willReturn(publisher)
         
         sut.fetch().sink {
             switch $0 {
@@ -133,7 +133,7 @@ final class RemoteDogRepositoryImplTests: XCTestCase {
         }.store(in: &tasks)
         
         wait(for: [expectation], timeout: 1.0)
-        verify(mockNetworkingProvider.fetch(from: url)).wasCalled()
+        verify(mockNetworkProvider.fetch(from: url)).wasCalled()
         tasks.removeAll()
     }
 }

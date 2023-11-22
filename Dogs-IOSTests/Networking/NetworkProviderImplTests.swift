@@ -4,11 +4,11 @@ import XCTest
 
 @testable import Dogs_IOS
 
-final class NetworkingProviderTests: XCTestCase {
+final class NetworkProviderTests: XCTestCase {
     
     // MARK: - Private Typealias
     
-    private typealias SUT = NetworkingProvider
+    private typealias SUT = NetworkProviderImpl
     
     // MARK: - Private Properties
     
