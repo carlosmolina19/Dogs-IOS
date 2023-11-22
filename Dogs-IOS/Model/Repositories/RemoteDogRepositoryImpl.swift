@@ -5,12 +5,12 @@ final class RemoteDogRepositoryImpl: RemoteDogRepository {
 
     // MARK: - Private Properties
 
-    private let networkingProvider: NetworkFetchable
+    private let networkProvider: NetworkProvider
 
     // MARK: - Initialization
 
-    init(networkingProvider: NetworkFetchable) {
-        self.networkingProvider = networkingProvider
+    init(networkProvider: NetworkProvider) {
+        self.networkProvider = networkProvider
     }
 
     // MARK: - Internal Methods
@@ -20,7 +20,7 @@ final class RemoteDogRepositoryImpl: RemoteDogRepository {
         else {
             fatalError("Can't initialize URL")
         }
-        return networkingProvider.fetch(from: url).tryMap {
+        return networkProvider.fetch(from: url).tryMap {
             guard let dogs: [DogModel] = try? JSONDecoder().decode([DogModel].self, from: $0)
             else {
                 throw DogsError.invalidFormat

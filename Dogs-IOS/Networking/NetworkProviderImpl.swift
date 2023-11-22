@@ -1,7 +1,7 @@
 import Combine
 import Foundation
 
-final class NetworkingProvider: NetworkFetchable {
+final class NetworkProviderImpl: NetworkProvider {
     
     // MARK: - Private Properties
     
