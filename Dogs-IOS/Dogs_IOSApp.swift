@@ -6,7 +6,7 @@ struct Dogs_IOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DogsSceneBuilder().build(persistentContainer: persistence.persistentContainer)
         }
     }
 }

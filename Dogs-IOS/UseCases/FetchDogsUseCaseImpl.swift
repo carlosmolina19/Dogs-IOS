@@ -21,16 +21,16 @@ final class FetchDogsUseCaseImpl: FetchDogsUseCase {
     
     func execute() -> AnyPublisher<[DogModel], DogsError> {
         localDogRepository.fetch()
-            .flatMap { [weak self] dogs -> AnyPublisher<[DogModel], DogsError> in
+            .flatMap { [weak self] dogs in
                 guard let self
                 else {
-                    return Just([]).setFailureType(to: DogsError.self).eraseToAnyPublisher()
+                    return Just([DogModel]()).setFailureType(to: DogsError.self).eraseToAnyPublisher()
                 }
                 return dogs.isEmpty ? self.remoteDogRepository.fetch() : Just(dogs).setFailureType(to: DogsError.self).eraseToAnyPublisher()
             }
-            .catch { [weak self] error -> AnyPublisher<[DogModel], DogsError> in
+            .catch { [weak self] error in
                 guard let self = self else {
-                    return Just([]).setFailureType(to: DogsError.self).eraseToAnyPublisher()
+                    return Just([DogModel]()).setFailureType(to: DogsError.self).eraseToAnyPublisher()
                 }
                 return self.remoteDogRepository.fetch()
             }

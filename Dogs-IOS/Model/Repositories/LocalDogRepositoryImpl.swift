@@ -17,7 +17,12 @@ final class LocalDogRepositoryImpl: LocalDogRepository {
     
     func fetch() -> AnyPublisher<[DogModel], DogsError> {
         localProvider.fetch(entityType: Dog.self)
-            .map { $0.compactMap { DogModel(dogEntity: $0) } }
+            .map { entities in
+               let array =  entities.compactMap { entity in
+                    DogModel(dogEntity: entity)
+                }
+                return array
+            }
             .mapError {
                 guard let error = $0 as? DogsError
                 else {
