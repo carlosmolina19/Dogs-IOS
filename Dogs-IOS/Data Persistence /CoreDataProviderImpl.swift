@@ -2,7 +2,13 @@ import Combine
 import CoreData
 import Foundation
 
-class CoreDataProviderImpl: CoreDataProvider {
+final class CoreDataProviderImpl: LocalProvider {
+    
+    // MARK: - Internal Computed Properties
+
+    var context: NSManagedObjectContext {
+        persistentContainer.viewContext
+    }
     
     // MARK: - Private Properties
 
