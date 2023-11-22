@@ -24,6 +24,12 @@
 		BE1C07102B0DCC3C005016B4 /* DogModel+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C070F2B0DCC3C005016B4 /* DogModel+NSManagedObject.swift */; };
 		BE1C07132B0DD576005016B4 /* Dog+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07122B0DD576005016B4 /* Dog+Model.swift */; };
 		BE1C07152B0DDD05005016B4 /* LocalDogRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07142B0DDD05005016B4 /* LocalDogRepositoryImplTests.swift */; };
+		BE1C071C2B0DEDC8005016B4 /* FetchDogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C071B2B0DEDC8005016B4 /* FetchDogsUseCase.swift */; };
+		BE1C071E2B0DEDDE005016B4 /* SaveDogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C071D2B0DEDDE005016B4 /* SaveDogsUseCase.swift */; };
+		BE1C07202B0DEEBE005016B4 /* FetchDogsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C071F2B0DEEBE005016B4 /* FetchDogsUseCaseImpl.swift */; };
+		BE1C07222B0DEECC005016B4 /* SaveDogsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07212B0DEECC005016B4 /* SaveDogsUseCaseImpl.swift */; };
+		BE1C07262B0E6C39005016B4 /* FetchDogsUseCaseImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07252B0E6C39005016B4 /* FetchDogsUseCaseImplTests.swift */; };
+		BE1C07282B0E6C50005016B4 /* SaveDogsUseCaseImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07272B0E6C50005016B4 /* SaveDogsUseCaseImplTests.swift */; };
 		BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */; };
 		BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49472B0BCA3700093ACB /* Persistence.swift */; };
 		BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */; };
@@ -74,6 +80,12 @@
 		BE1C070F2B0DCC3C005016B4 /* DogModel+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogModel+NSManagedObject.swift"; sourceTree = "<group>"; };
 		BE1C07122B0DD576005016B4 /* Dog+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+Model.swift"; sourceTree = "<group>"; };
 		BE1C07142B0DDD05005016B4 /* LocalDogRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDogRepositoryImplTests.swift; sourceTree = "<group>"; };
+		BE1C071B2B0DEDC8005016B4 /* FetchDogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDogsUseCase.swift; sourceTree = "<group>"; };
+		BE1C071D2B0DEDDE005016B4 /* SaveDogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDogsUseCase.swift; sourceTree = "<group>"; };
+		BE1C071F2B0DEEBE005016B4 /* FetchDogsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDogsUseCaseImpl.swift; sourceTree = "<group>"; };
+		BE1C07212B0DEECC005016B4 /* SaveDogsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDogsUseCaseImpl.swift; sourceTree = "<group>"; };
+		BE1C07252B0E6C39005016B4 /* FetchDogsUseCaseImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDogsUseCaseImplTests.swift; sourceTree = "<group>"; };
+		BE1C07272B0E6C50005016B4 /* SaveDogsUseCaseImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDogsUseCaseImplTests.swift; sourceTree = "<group>"; };
 		BE5B49422B0BCA3700093ACB /* Dogs-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dogs-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSApp.swift; sourceTree = "<group>"; };
 		BE5B49472B0BCA3700093ACB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -205,6 +217,34 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		BE1C07192B0DED2F005016B4 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C071A2B0DED55005016B4 /* Protocol */,
+				BE1C071F2B0DEEBE005016B4 /* FetchDogsUseCaseImpl.swift */,
+				BE1C07212B0DEECC005016B4 /* SaveDogsUseCaseImpl.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BE1C071A2B0DED55005016B4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C071B2B0DEDC8005016B4 /* FetchDogsUseCase.swift */,
+				BE1C071D2B0DEDDE005016B4 /* SaveDogsUseCase.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BE1C07232B0E6C10005016B4 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C07252B0E6C39005016B4 /* FetchDogsUseCaseImplTests.swift */,
+				BE1C07272B0E6C50005016B4 /* SaveDogsUseCaseImplTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		BE5B49392B0BCA3700093ACB = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +277,7 @@
 				BE5B49762B0BD7A900093ACB /* Model */,
 				BE5B49792B0BD80000093ACB /* Networking */,
 				BE5B49512B0BCA3800093ACB /* Preview Content */,
+				BE1C07192B0DED2F005016B4 /* UseCases */,
 				BE5B49752B0BD79500093ACB /* View */,
 				BE5B498A2B0C0EF400093ACB /* ViewModel */,
 			);
@@ -254,6 +295,7 @@
 		BE5B495B2B0BCA3800093ACB /* Dogs-IOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE1C07232B0E6C10005016B4 /* UseCases */,
 				BE1C07052B0DAA1A005016B4 /* Data Persistence */,
 				BE1C06F42B0D30AA005016B4 /* Resources */,
 				BE5B49962B0C2D2700093ACB /* Mocks */,
@@ -536,11 +578,15 @@
 				BE1C070E2B0DC837005016B4 /* LocalDogRepositoryImpl.swift in Sources */,
 				BE1C06F12B0D2C0C005016B4 /* RemoteDogRepositoryImpl.swift in Sources */,
 				BE5B498F2B0C174200093ACB /* NetworkProvider.swift in Sources */,
+				BE1C071E2B0DEDDE005016B4 /* SaveDogsUseCase.swift in Sources */,
 				BE5B498C2B0C139D00093ACB /* NetworkProviderImpl.swift in Sources */,
 				BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */,
 				BE5B494D2B0BCA3700093ACB /* ContentView.swift in Sources */,
 				BE1C070C2B0DC824005016B4 /* LocalDogRepository.swift in Sources */,
+				BE1C071C2B0DEDC8005016B4 /* FetchDogsUseCase.swift in Sources */,
+				BE1C07202B0DEEBE005016B4 /* FetchDogsUseCaseImpl.swift in Sources */,
 				BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */,
+				BE1C07222B0DEECC005016B4 /* SaveDogsUseCaseImpl.swift in Sources */,
 				BE1C07132B0DD576005016B4 /* Dog+Model.swift in Sources */,
 				BE1C06F92B0D3BD8005016B4 /* DogsError.swift in Sources */,
 				BE1C07022B0DA1FD005016B4 /* LocalProvider.swift in Sources */,
@@ -556,8 +602,10 @@
 				BE1C07152B0DDD05005016B4 /* LocalDogRepositoryImplTests.swift in Sources */,
 				BE5B49952B0C2A4800093ACB /* NetworkProviderImplTests.swift in Sources */,
 				BE5B49A82B0C61CE00093ACB /* URLProtocolMock.swift in Sources */,
+				BE1C07282B0E6C50005016B4 /* SaveDogsUseCaseImplTests.swift in Sources */,
 				BE1C07092B0DAA63005016B4 /* NSPersistentContainer+Mock.swift in Sources */,
 				BE1C06FC2B0D43FD005016B4 /* RemoteDogRepositoryImplTests.swift in Sources */,
+				BE1C07262B0E6C39005016B4 /* FetchDogsUseCaseImplTests.swift in Sources */,
 				AE545436257B7047D7180D7A /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
