@@ -1,6 +1,6 @@
 import CoreData
 
-class Persistence {
+final class Persistence {
     static let shared = Persistence()
 
     let persistentContainer: NSPersistentContainer

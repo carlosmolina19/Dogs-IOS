@@ -38,6 +38,10 @@ final class CoreDataProviderImplTests: XCTestCase {
     
     // MARK: - Tests
     
+    func test_context_shouldBeEqual() {
+        XCTAssertEqual(sut.context, mockPersistentContainer.viewContext)
+    }
+    
     func test_fetch_shouldFulFill() {
         let expectation = expectation(description: "test_fetch_shouldFulFill")
         
