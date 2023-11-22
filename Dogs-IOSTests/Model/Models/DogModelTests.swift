@@ -44,4 +44,20 @@ final class DogModelTests: XCTestCase {
         XCTAssertEqual(sut.age, age)
         XCTAssertEqual(sut.url.absoluteString, url.absoluteString)
     }
+    
+    func test_initFromDecode_valuesShouldBeEqual() throws {
+        guard let asset = NSDataAsset(name: "DogResponse")
+        else {
+            XCTFail("Init Error")
+            return
+        }
+        
+        sut = try JSONDecoder().decode([SUT].self, from: asset.data).first
+        
+        XCTAssertNotNil(sut.id)
+        XCTAssertEqual(sut.name, "dog.name")
+        XCTAssertEqual(sut.description, "dog.description")
+        XCTAssertEqual(sut.age, 1)
+        XCTAssertEqual(sut.url.absoluteString, "https://test.dog.com")
+    }
 }

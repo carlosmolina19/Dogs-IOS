@@ -1,6 +1,5 @@
 import Combine
 import Foundation
-import Mockingbird
 import XCTest
 
 @testable import Dogs_IOS
@@ -36,7 +35,7 @@ final class NetworkingProviderTests: XCTestCase {
     
     // MARK: - Tests
     
-    func test_fetch_shouldReturnValues() throws {
+    func test_fetch_shouldReturnValues() {
         guard let url = URL(string: "https://tests.com"),
               let data = "{\"someJsonKey\": \"someJsonData\"}".data(using: .utf8)
         else {
@@ -74,7 +73,7 @@ final class NetworkingProviderTests: XCTestCase {
         tasks.removeAll()
     }
     
-    func test_fetch_whenErrorIsReceived_shouldNotBeNil() throws {
+    func test_fetch_whenErrorIsReceived_shouldNotBeNil() {
         guard let url = URL(string: "https://example.com")
         else {
             XCTFail("Init error")
