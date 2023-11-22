@@ -1,0 +1,14 @@
+[
+    {
+      "dogName": "dog.name",
+      "description": "dog.description",
+      "age": 1,
+      "image": "https://test.dog.com"
+    },
+    {
+      "dogName": "dor.name.2",
+      "description": "dog.description.2",
+      "age": 2,
+      "image": "https://test.dog.2.com"
+    }
+]

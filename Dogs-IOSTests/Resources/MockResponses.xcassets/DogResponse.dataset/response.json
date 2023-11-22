@@ -1,0 +1,8 @@
+[
+    {
+      "dogName": "dog.name",
+      "description": "dog.description",
+      "age": 1,
+      "image": "https://test.dog.com"
+    }
+]
