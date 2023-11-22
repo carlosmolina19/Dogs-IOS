@@ -15,6 +15,10 @@
 		BE1C06F92B0D3BD8005016B4 /* DogsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C06F82B0D3BD8005016B4 /* DogsError.swift */; };
 		BE1C06FC2B0D43FD005016B4 /* RemoteDogRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C06FB2B0D43FD005016B4 /* RemoteDogRepositoryImplTests.swift */; };
 		BE1C06FD2B0D6331005016B4 /* MockResponses.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1C06F52B0D3104005016B4 /* MockResponses.xcassets */; };
+		BE1C07022B0DA1FD005016B4 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07012B0DA1FD005016B4 /* CoreDataProvider.swift */; };
+		BE1C07042B0DA25E005016B4 /* CoreDataProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07032B0DA25E005016B4 /* CoreDataProviderImpl.swift */; };
+		BE1C07072B0DAA3A005016B4 /* CoreDataProviderImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07062B0DAA3A005016B4 /* CoreDataProviderImplTests.swift */; };
+		BE1C07092B0DAA63005016B4 /* NSPersistentContainer+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07082B0DAA63005016B4 /* NSPersistentContainer+Mock.swift */; };
 		BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */; };
 		BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49472B0BCA3700093ACB /* Persistence.swift */; };
 		BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */; };
@@ -56,6 +60,10 @@
 		BE1C06F52B0D3104005016B4 /* MockResponses.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MockResponses.xcassets; sourceTree = "<group>"; };
 		BE1C06F82B0D3BD8005016B4 /* DogsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsError.swift; sourceTree = "<group>"; };
 		BE1C06FB2B0D43FD005016B4 /* RemoteDogRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDogRepositoryImplTests.swift; sourceTree = "<group>"; };
+		BE1C07012B0DA1FD005016B4 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		BE1C07032B0DA25E005016B4 /* CoreDataProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProviderImpl.swift; sourceTree = "<group>"; };
+		BE1C07062B0DAA3A005016B4 /* CoreDataProviderImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProviderImplTests.swift; sourceTree = "<group>"; };
+		BE1C07082B0DAA63005016B4 /* NSPersistentContainer+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Mock.swift"; sourceTree = "<group>"; };
 		BE5B49422B0BCA3700093ACB /* Dogs-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dogs-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSApp.swift; sourceTree = "<group>"; };
 		BE5B49472B0BCA3700093ACB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -152,6 +160,30 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		BE1C07002B0DA173005016B4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C07012B0DA1FD005016B4 /* CoreDataProvider.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BE1C07052B0DAA1A005016B4 /* Data Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C07062B0DAA3A005016B4 /* CoreDataProviderImplTests.swift */,
+			);
+			path = "Data Persistence";
+			sourceTree = "<group>";
+		};
+		BE1C070A2B0DAC85005016B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C07082B0DAA63005016B4 /* NSPersistentContainer+Mock.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BE5B49392B0BCA3700093ACB = {
 			isa = PBXGroup;
 			children = (
@@ -180,11 +212,9 @@
 				BE5B494C2B0BCA3700093ACB /* ContentView.swift */,
 				BE5B49772B0BD7C400093ACB /* Data Persistence  */,
 				BE5B49502B0BCA3800093ACB /* Dogs_IOS.entitlements */,
-				BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */,
 				BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */,
 				BE5B49762B0BD7A900093ACB /* Model */,
 				BE5B49792B0BD80000093ACB /* Networking */,
-				BE5B49472B0BCA3700093ACB /* Persistence.swift */,
 				BE5B49512B0BCA3800093ACB /* Preview Content */,
 				BE5B49752B0BD79500093ACB /* View */,
 				BE5B498A2B0C0EF400093ACB /* ViewModel */,
@@ -203,6 +233,7 @@
 		BE5B495B2B0BCA3800093ACB /* Dogs-IOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE1C07052B0DAA1A005016B4 /* Data Persistence */,
 				BE1C06F42B0D30AA005016B4 /* Resources */,
 				BE5B49962B0C2D2700093ACB /* Mocks */,
 				BE5B49902B0C189B00093ACB /* Networking */,
@@ -240,6 +271,10 @@
 		BE5B49772B0BD7C400093ACB /* Data Persistence  */ = {
 			isa = PBXGroup;
 			children = (
+				BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */,
+				BE1C07002B0DA173005016B4 /* Protocol */,
+				BE1C07032B0DA25E005016B4 /* CoreDataProviderImpl.swift */,
+				BE5B49472B0BCA3700093ACB /* Persistence.swift */,
 			);
 			path = "Data Persistence ";
 			sourceTree = "<group>";
@@ -305,6 +340,7 @@
 		BE5B49962B0C2D2700093ACB /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				BE1C070A2B0DAC85005016B4 /* Extensions */,
 				BE5B49A72B0C61CE00093ACB /* URLProtocolMock.swift */,
 			);
 			path = Mocks;
@@ -471,6 +507,7 @@
 				BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */,
 				BE5B49852B0BF60D00093ACB /* DogModel.swift in Sources */,
 				BE1C06F32B0D2FEA005016B4 /* DogModel+Decodable.swift in Sources */,
+				BE1C07042B0DA25E005016B4 /* CoreDataProviderImpl.swift in Sources */,
 				BE1C06EF2B0D2AED005016B4 /* RemoteDogRepository.swift in Sources */,
 				BE1C06F12B0D2C0C005016B4 /* RemoteDogRepositoryImpl.swift in Sources */,
 				BE5B498F2B0C174200093ACB /* NetworkProvider.swift in Sources */,
@@ -479,6 +516,7 @@
 				BE5B494D2B0BCA3700093ACB /* ContentView.swift in Sources */,
 				BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */,
 				BE1C06F92B0D3BD8005016B4 /* DogsError.swift in Sources */,
+				BE1C07022B0DA1FD005016B4 /* CoreDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,8 +525,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5B49892B0BF90E00093ACB /* DogModelTests.swift in Sources */,
+				BE1C07072B0DAA3A005016B4 /* CoreDataProviderImplTests.swift in Sources */,
 				BE5B49952B0C2A4800093ACB /* NetworkProviderImplTests.swift in Sources */,
 				BE5B49A82B0C61CE00093ACB /* URLProtocolMock.swift in Sources */,
+				BE1C07092B0DAA63005016B4 /* NSPersistentContainer+Mock.swift in Sources */,
 				BE1C06FC2B0D43FD005016B4 /* RemoteDogRepositoryImplTests.swift in Sources */,
 				AE545436257B7047D7180D7A /* Dogs_IOSTests-Dogs_IOSMocks.generated.swift in Sources */,
 			);
