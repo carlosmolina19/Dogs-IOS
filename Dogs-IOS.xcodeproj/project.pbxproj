@@ -42,6 +42,8 @@
 		BE1C07482B0F0CA7005016B4 /* DogsSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C07472B0F0CA7005016B4 /* DogsSceneBuilder.swift */; };
 		BE1C074B2B0F2295005016B4 /* DogListViewModelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C074A2B0F2295005016B4 /* DogListViewModelPreview.swift */; };
 		BE1C074D2B0F22A1005016B4 /* DogItemViewModelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C074C2B0F22A1005016B4 /* DogItemViewModelPreview.swift */; };
+		BE1C075D2B0F284A005016B4 /* DogsListViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C075C2B0F284A005016B4 /* DogsListViewSnapshotTests.swift */; };
+		BE1C07602B0F28C8005016B4 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C075F2B0F28C8005016B4 /* iOSSnapshotTestCase */; };
 		BE5B49462B0BCA3700093ACB /* Dogs_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */; };
 		BE5B49482B0BCA3700093ACB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49472B0BCA3700093ACB /* Persistence.swift */; };
 		BE5B494B2B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5B49492B0BCA3700093ACB /* Dogs_IOS.xcdatamodeld */; };
@@ -58,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BE1C07562B0F281D005016B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5B493A2B0BCA3700093ACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5B49412B0BCA3700093ACB;
+			remoteInfo = "Dogs-IOS";
+		};
 		BE5B49592B0BCA3800093ACB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE5B493A2B0BCA3700093ACB /* Project object */;
@@ -101,6 +110,8 @@
 		BE1C07472B0F0CA7005016B4 /* DogsSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsSceneBuilder.swift; sourceTree = "<group>"; };
 		BE1C074A2B0F2295005016B4 /* DogListViewModelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModelPreview.swift; sourceTree = "<group>"; };
 		BE1C074C2B0F22A1005016B4 /* DogItemViewModelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogItemViewModelPreview.swift; sourceTree = "<group>"; };
+		BE1C07522B0F281D005016B4 /* Dogs-IOSSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs-IOSSnapshotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1C075C2B0F284A005016B4 /* DogsListViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListViewSnapshotTests.swift; sourceTree = "<group>"; };
 		BE5B49422B0BCA3700093ACB /* Dogs-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dogs-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B49452B0BCA3700093ACB /* Dogs_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSApp.swift; sourceTree = "<group>"; };
 		BE5B49472B0BCA3700093ACB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -110,8 +121,6 @@
 		BE5B49502B0BCA3800093ACB /* Dogs_IOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dogs_IOS.entitlements; sourceTree = "<group>"; };
 		BE5B49522B0BCA3800093ACB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE5B49582B0BCA3800093ACB /* Dogs-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE5B49662B0BCA3800093ACB /* Dogs_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITests.swift; sourceTree = "<group>"; };
-		BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BE5B49842B0BF60D00093ACB /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		BE5B49882B0BF90E00093ACB /* DogModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModelTests.swift; sourceTree = "<group>"; };
 		BE5B498B2B0C139D00093ACB /* NetworkProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderImpl.swift; sourceTree = "<group>"; };
@@ -122,6 +131,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE1C074F2B0F281D005016B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1C07602B0F28C8005016B4 /* iOSSnapshotTestCase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE5B493F2B0BCA3700093ACB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,12 +328,28 @@
 			path = Previews;
 			sourceTree = "<group>";
 		};
+		BE1C07532B0F281D005016B4 /* Dogs-IOSSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C075B2B0F2832005016B4 /* Views */,
+			);
+			path = "Dogs-IOSSnapshotTests";
+			sourceTree = "<group>";
+		};
+		BE1C075B2B0F2832005016B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C075C2B0F284A005016B4 /* DogsListViewSnapshotTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BE5B49392B0BCA3700093ACB = {
 			isa = PBXGroup;
 			children = (
 				BE5B49442B0BCA3700093ACB /* Dogs-IOS */,
 				BE5B495B2B0BCA3800093ACB /* Dogs-IOSTests */,
-				BE5B49652B0BCA3800093ACB /* Dogs-IOSUITests */,
+				BE1C07532B0F281D005016B4 /* Dogs-IOSSnapshotTests */,
 				BE5B49432B0BCA3700093ACB /* Products */,
 				76265997B7518A13B7547FD5 /* Generated Mocks */,
 				BE1C07402B0EECFF005016B4 /* Frameworks */,
@@ -328,6 +361,7 @@
 			children = (
 				BE5B49422B0BCA3700093ACB /* Dogs-IOS.app */,
 				BE5B49582B0BCA3800093ACB /* Dogs-IOSTests.xctest */,
+				BE1C07522B0F281D005016B4 /* Dogs-IOSSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,15 +403,6 @@
 				BE1C07322B0EA21F005016B4 /* ViewModel */,
 			);
 			path = "Dogs-IOSTests";
-			sourceTree = "<group>";
-		};
-		BE5B49652B0BCA3800093ACB /* Dogs-IOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BE5B49662B0BCA3800093ACB /* Dogs_IOSUITests.swift */,
-				BE5B49682B0BCA3800093ACB /* Dogs_IOSUITestsLaunchTests.swift */,
-			);
-			path = "Dogs-IOSUITests";
 			sourceTree = "<group>";
 		};
 		BE5B49752B0BD79500093ACB /* View */ = {
@@ -488,6 +513,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE1C07512B0F281D005016B4 /* Dogs-IOSSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1C07582B0F281D005016B4 /* Build configuration list for PBXNativeTarget "Dogs-IOSSnapshotTests" */;
+			buildPhases = (
+				BE1C074E2B0F281D005016B4 /* Sources */,
+				BE1C074F2B0F281D005016B4 /* Frameworks */,
+				BE1C07502B0F281D005016B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1C07572B0F281D005016B4 /* PBXTargetDependency */,
+			);
+			name = "Dogs-IOSSnapshotTests";
+			packageProductDependencies = (
+				BE1C075F2B0F28C8005016B4 /* iOSSnapshotTestCase */,
+			);
+			productName = "Dogs-IOSSnapshotTests";
+			productReference = BE1C07522B0F281D005016B4 /* Dogs-IOSSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BE5B49412B0BCA3700093ACB /* Dogs-IOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE5B496C2B0BCA3800093ACB /* Build configuration list for PBXNativeTarget "Dogs-IOS" */;
@@ -539,6 +585,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					BE1C07512B0F281D005016B4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = BE5B49412B0BCA3700093ACB;
+					};
 					BE5B49412B0BCA3700093ACB = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -559,6 +609,7 @@
 			mainGroup = BE5B49392B0BCA3700093ACB;
 			packageReferences = (
 				BE5B49912B0C228E00093ACB /* XCRemoteSwiftPackageReference "mockingbird" */,
+				BE1C075E2B0F28C8005016B4 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
 			);
 			productRefGroup = BE5B49432B0BCA3700093ACB /* Products */;
 			projectDirPath = "";
@@ -566,11 +617,19 @@
 			targets = (
 				BE5B49412B0BCA3700093ACB /* Dogs-IOS */,
 				BE5B49572B0BCA3800093ACB /* Dogs-IOSTests */,
+				BE1C07512B0F281D005016B4 /* Dogs-IOSSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE1C07502B0F281D005016B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE5B49402B0BCA3700093ACB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +670,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE1C074E2B0F281D005016B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1C075D2B0F284A005016B4 /* DogsListViewSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE5B493E2B0BCA3700093ACB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -671,6 +738,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BE1C07572B0F281D005016B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5B49412B0BCA3700093ACB /* Dogs-IOS */;
+			targetProxy = BE1C07562B0F281D005016B4 /* PBXContainerItemProxy */;
+		};
 		BE5B495A2B0BCA3800093ACB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BE5B49412B0BCA3700093ACB /* Dogs-IOS */;
@@ -679,6 +751,51 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BE1C07592B0F281D005016B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.konfio.carlos.molina.com.Dogs-IOSSnapshotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dogs-IOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dogs-IOS";
+			};
+			name = Debug;
+		};
+		BE1C075A2B0F281D005016B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.konfio.carlos.molina.com.Dogs-IOSSnapshotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dogs-IOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dogs-IOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BE5B496A2B0BCA3800093ACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -814,8 +931,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -828,7 +945,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -853,8 +970,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -867,7 +984,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -890,7 +1007,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dogs-IOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dogs-IOS";
 			};
 			name = Debug;
@@ -914,7 +1031,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dogs-IOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dogs-IOS";
 			};
 			name = Release;
@@ -922,6 +1039,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE1C07582B0F281D005016B4 /* Build configuration list for PBXNativeTarget "Dogs-IOSSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1C07592B0F281D005016B4 /* Debug */,
+				BE1C075A2B0F281D005016B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BE5B493D2B0BCA3700093ACB /* Build configuration list for PBXProject "Dogs-IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -952,6 +1078,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BE1C075E2B0F28C8005016B4 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		BE5B49912B0C228E00093ACB /* XCRemoteSwiftPackageReference "mockingbird" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/birdrides/mockingbird.git";
@@ -963,6 +1097,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BE1C075F2B0F28C8005016B4 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C075E2B0F28C8005016B4 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
 		BE5B49922B0C228E00093ACB /* Mockingbird */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BE5B49912B0C228E00093ACB /* XCRemoteSwiftPackageReference "mockingbird" */;
